@@ -20,7 +20,10 @@ public class ModelImplementation implements Model{
 
     @Override
     public String getGreeting() {
-        String greeting ="rrrr";
+        /**
+         * Reads the greeting from a properties file which is hosted in one of the devices directories
+         */
+        String greeting =null;
         Properties prop = new Properties();
         InputStream is = null;
 		
@@ -30,9 +33,9 @@ public class ModelImplementation implements Model{
 		} catch(IOException e) {
 			System.out.println(e.toString());
 		}
-                System.err.println(prop.getProperty("saludo.greeting"));
+                //System.err.println(prop.getProperty("saludo.greeting"));
                 greeting=prop.getProperty("saludo.greeting");
-        
+
         return greeting;
     }
     
