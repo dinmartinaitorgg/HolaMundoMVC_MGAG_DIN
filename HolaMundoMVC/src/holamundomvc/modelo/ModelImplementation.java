@@ -10,7 +10,9 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
+import java.util.ResourceBundle;
 import java.util.Scanner;
+
 
 /**
  *Contains the method to get the greeting message, which is sent back as a String.
@@ -23,9 +25,11 @@ public class ModelImplementation implements Model{
         /**
          * Reads the greeting from a properties file which is hosted in one of the devices directories
          */
-        String greeting =null;
-        Properties prop = new Properties();
+        String greeting = ResourceBundle.getBundle("holamundomvc.modelo.cadena").getString("saludo.greeting");
+        /*Properties prop = new Properties();
         InputStream is = null;
+        
+        
 		
 		try {
 			is = new FileInputStream("c:\\properties\\cadena.properties"); //Especificar directorio!!!!!
@@ -35,6 +39,7 @@ public class ModelImplementation implements Model{
 		}
                 //System.err.println(prop.getProperty("saludo.greeting"));
                 greeting=prop.getProperty("saludo.greeting");
+*/
 
         return greeting;
     }
