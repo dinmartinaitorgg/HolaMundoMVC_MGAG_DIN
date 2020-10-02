@@ -28,7 +28,7 @@ public class ModelImplementation implements Model{
         InputStream is = null;
 		
 		try {
-			is = new FileInputStream("c:\\properties\\cadena.properties");
+			is = new FileInputStream("c:\\properties\\cadena.properties"); //Especificar directorio!!!!!
 			prop.load(is);
 		} catch(IOException e) {
 			System.out.println(e.toString());

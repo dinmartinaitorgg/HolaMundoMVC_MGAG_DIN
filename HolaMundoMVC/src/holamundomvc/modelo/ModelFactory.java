@@ -10,8 +10,12 @@ package holamundomvc.modelo;
  * @author 2dam
  */
 public class ModelFactory {
-    public Model getModel(){
-    return new ModelImplementation();
+    public Model getModel(int n){
+        if (n==1){
+            return new ModelImplementation();}
+        else{
+            return new DbModelImplementation();
+        }
     }
     
 }

@@ -11,11 +11,15 @@ import holamundomvc.nview.utilidades.Util;
 
 
 /**
- *
- * @author 2dam
+ * Controlador donde se obtiene el saludo y se muestra por pantalla.
+ * @author Martin & Aitor
  */
 public class Controller {
     public void run (View vista, Model modelo){
+        /**
+         * Primero se obtiene el saludo con el metodo getGreeting
+         * Se ejecuta mediante el showGreeting
+         */
 
             String saludo = modelo.getGreeting();
             vista.showGreeting(saludo);

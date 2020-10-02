@@ -6,7 +6,7 @@
 package holamundomvc.nview;
 
 /**
- *
+ * Creates either a ViewImplementation instance or a GraphicViewImplementation instance and sends it back to the app.
  * @author 2dam
  */
 public class ViewFactory {
