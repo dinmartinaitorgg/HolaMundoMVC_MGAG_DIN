@@ -21,6 +21,7 @@ import holamundomvc.nview.utilidades.db.DAO;
  * Same for the model, the user will choose either if he'd rather to get the greeting from a properties file or databsase
  * Following this as well the model's factory will generate and return one of the implementations.
  * Both the model on the view are sent to the controller
+ * 
  * @author Martin & Aitor
  */
 public class Application {
@@ -32,9 +33,7 @@ public class Application {
     public static void main(String[] args) throws Exception {
         // TODO code application logic here
         
-        DAO daos = new DAO();
-        String ssss = daos.getSaludo();
-        System.out.println(ssss);
+        
         
         
         View vista;
