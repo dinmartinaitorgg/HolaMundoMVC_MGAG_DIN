@@ -23,7 +23,7 @@ public class DbModelImplementationTest {
     public void testGetGreeting() {
         System.out.println("getGreeting");
         DbModelImplementation instance = new DbModelImplementation();
-        String expResult = "HolaMundo";
+        String expResult = "Egun on Aitor";
         String result = instance.getGreeting();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
